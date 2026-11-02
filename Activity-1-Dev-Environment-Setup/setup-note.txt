@@ -1,7 +1,10 @@
+
 **Activity 2 – C/C++ Development Environment Setup**
 
-I installed Visual Studio Code and the Microsoft C/C++ extension. I installed the GCC compiler and configured its bin directory in the Windows PATH environment variable. I verified the installation using `gcc --version` and `g++ --version`. I created and compiled a C program named `hello.c` and successfully executed it to display "Hello, World!" in the terminal.
-
-**Problem faced:** Initially, the terminal could not recognize the `gcc` command because the compiler's bin directory had not been added correctly to the PATH environment variable.
-
-**Solution:** I added the correct compiler bin directory to the Windows PATH variable and restarted the terminal to apply the changes. After that, the GCC compiler was recognized, and I was able to compile and execute my C program successfully.
+I installed Visual Studio Code, the Microsoft C/C++ extension and MSYS2 MinGW-w64.
+Initially, my system was using the older MinGW compiler instead of the MSYS2 compiler.
+I checked the compiler paths using the `where.exe gcc` command.
+I found that the older MinGW directory had higher priority in the PATH.
+I changed the PATH priority to make MSYS2 UCRT64 the default compiler.
+I verified GCC and G++ successfully using their version commands.
+Finally, I compiled and executed `hello.c` and got the expected "Hello, World!" output.
