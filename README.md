@@ -6,3 +6,5 @@ Hi, I'm Rohini S R, a B.Tech student pursuing Computer Science and Engineering (
 Learning C#, Python, and Java
 
 Interested in cloud computing and software development
+
+Goal: Build projects and contribute to open source
